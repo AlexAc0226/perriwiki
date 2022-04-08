@@ -63,7 +63,7 @@ export function filterByTemp(temp){
 
 export function getTemperament(){
   return function (dispatch) {
-    axios.get("http://localhost:3001/temperament").then(res => {
+    axios.get("/temperament").then(res => {
       dispatch({
         type: GET_TYPES_OF_TEMPERAMENTS,
         payload: res.data
